@@ -10,11 +10,11 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the entire project to the container
+# Copy project 
 COPY . .
 
 # Expose port 3001 for React app
 EXPOSE 3001
 
-# Start the React app
-CMD ["npm", "start"]
+# Start command
+CMD ["npm", "run", "dev"]
