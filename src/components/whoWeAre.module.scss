@@ -1,0 +1,54 @@
+/** @format */
+@use '../app.scss' as *;
+@use '../mixins.scss' as *;
+
+.container {
+  padding: 8.8rem 10rem;
+}
+.title {
+  color: #0c2141;
+  font-family: Inter;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-align: center;
+}
+
+.subText {
+  color: #1d1d1d;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 172.222% */
+  width: 62%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 13.5rem;
+}
+
+.imageCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8.4rem;
+}
+
+@include respond-to(xs, max) {
+  .container {
+    padding: 3.3rem;
+    margin-top: 19rem;
+  }
+  .title {
+    font-size: 2.3rem;
+  }
+  .subText {
+    width: 100%;
+    margin-bottom: 8.9rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    line-height: 25px;
+  }
+}

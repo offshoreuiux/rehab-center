@@ -1,0 +1,35 @@
+/** @format */
+
+@use '../../app.scss' as *;
+@use '../../mixins.scss' as *;
+
+.btn {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 5.5rem;
+  background: $primary-color;
+  border: transparent;
+  width: 16.4rem;
+  height: 5.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btnsecondary {
+  color: #0b1f3d;
+  background-color: #fff;
+  border-radius: 55px;
+  border: 1px solid #0b1f3d;
+}
+
+@include respond-to(xs, max) {
+  .btn {
+    width: 14.3rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+}

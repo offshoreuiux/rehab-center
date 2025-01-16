@@ -1,0 +1,54 @@
+/** @format */
+@use '../app.scss' as *;
+@use '../mixins.scss' as *;
+
+.container {
+  height: 39.4rem;
+  background: url('../assets/journey-bg.png') #0b1f3d 0px 0px / 100% 138%
+    no-repeat;
+  background-blend-mode: hard-light;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.text {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 172.222% */
+  margin-top: 1.5rem;
+  margin-bottom: 4.4rem;
+  width: 77rem;
+}
+
+@include respond-to(xs, max) {
+  .container {
+    height: 36.7rem;
+    margin-bottom: 0;
+  }
+  .title {
+    font-size: 2.3rem;
+    max-width: 22.8rem;
+    text-align: center;
+  }
+  .text {
+    font-size: 1.4rem;
+    max-width: 32.6rem;
+    margin-bottom: 2.4rem;
+    line-height: 2.5rem;
+  }
+}

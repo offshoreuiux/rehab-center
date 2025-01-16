@@ -1,0 +1,18 @@
+/** @format */
+@use './app.scss' as *;
+
+@mixin respond-to($breakpoint, $type: min) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+  @if $type == min {
+    @media (min-width: #{$breakpoint-value}) {
+      @content;
+    }
+  } @else if $type == max {
+    @media (max-width: #{$breakpoint-value}) {
+      @content;
+    }
+  } @else {
+    @warn "Invalid value for '$type'. Use 'min' or 'max'.";
+  }
+}

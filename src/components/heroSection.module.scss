@@ -1,0 +1,170 @@
+/** @format */
+
+@use '../app.scss' as *;
+@use '../mixins.scss' as *;
+
+.container {
+  background: url(../assets/hero-bg.jfif) lightgray 50% / cover no-repeat;
+  background-blend-mode: multiply;
+  width: 100%;
+  //   height: 795px;
+  flex-shrink: 0;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem;
+  background-color: #0d264df2;
+  gap: 8.8rem;
+}
+.text {
+  color: #4dbc9d;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.primary {
+  color: #fff;
+  font-family: Inter;
+  font-size: 6.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.24px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.primaryColored {
+  color: $primary-color;
+}
+
+.secondaryText {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 172.222% */
+  margin-bottom: 4rem;
+}
+
+.textContainer {
+  width: 50%;
+}
+.heroImg {
+  width: 100%;
+}
+.heroMobileImg {
+  width: 100%;
+  display: none;
+}
+.imgContainer {
+  position: relative;
+  width: 37.34%;
+  min-width: 500px;
+}
+.trustedContainer {
+  border-radius: 8px;
+  background: #fff;
+  padding: 1.6rem;
+  position: absolute;
+  bottom: 6rem;
+  left: -5.4rem;
+  width: 20.9rem;
+  height: 9.4rem;
+}
+
+.trusted {
+  color: #1d1d1d;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 112.5% */
+}
+
+.customerImageContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+.img,
+.plusBtn {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+}
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+}
+.img3 {
+  position: absolute;
+  top: 0;
+  left: 5rem;
+}
+
+.plusBtn {
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1.5px solid #fff;
+  background: linear-gradient(0deg, #4dbc9d 0%, #4dbc9d 100%),
+    url(<path-to-image>) lightgray -15.534px 0px / 150.198% 100% no-repeat;
+  position: absolute;
+  top: 0;
+  left: 7.5rem;
+}
+
+@include respond-to(xs, max) {
+  .trustedContainer {
+    display: none;
+  }
+  .innerContainer {
+    flex-direction: column;
+    padding: 1.9rem;
+    height: 434px;
+    gap: 4.8rem;
+  }
+  .imgContainer {
+    max-width: 35.6rem;
+    min-width: 100%;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .primary {
+    font-size: 2.6rem;
+  }
+  .textContainer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .secondaryText {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+    line-height: 2.5rem;
+  }
+  .heroImg {
+    display: none;
+  }
+  .heroMobileImg {
+    display: block;
+  }
+}

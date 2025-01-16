@@ -1,0 +1,87 @@
+/** @format */
+@use '../../app.scss' as *;
+@use '../../mixins.scss' as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.reverseContainer {
+  flex-direction: row-reverse;
+}
+
+.box {
+  min-width: 475px;
+  height: 487px;
+  border-radius: 16px;
+  background: #4dbc9d;
+  position: relative;
+}
+
+.img {
+  width: 584px;
+  height: 442px;
+  position: absolute;
+  left: 22px;
+  top: 23px;
+}
+
+.reverseImg {
+  left: -132px;
+  top: 23px;
+}
+
+.title {
+  color: #0c2141;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+
+.text {
+  color: #1d1d1d;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 172.222% */
+  width: 55.6rem;
+  margin-top: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+@include respond-to(xs, max) {
+  .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .textContainer {
+    text-align: center;
+  }
+  .box {
+    width: 293px;
+    height: 259px;
+    min-width: 293px;
+  }
+  .img {
+    width: 310.31px;
+    height: 234.858px;
+    left: 12px;
+    top: 12px;
+  }
+  .text {
+    width: 326px;
+    font-size: 1.4rem;
+    line-height: 25px;
+  }
+  .title {
+    font-size: 2.3rem;
+  }
+}

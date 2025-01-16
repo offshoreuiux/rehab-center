@@ -1,0 +1,75 @@
+/** @format */
+@use '../app.scss' as *;
+@use '../mixins.scss' as *;
+
+.container {
+  background: #39a585;
+  margin: auto;
+  text-align: center;
+  padding: 4rem;
+  margin-top: 9rem;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.titleContainer {
+  text-align: left;
+}
+.title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 27.962px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subTitle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 11.984px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2.876px;
+}
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.contact {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+}
+.copyright {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+@include respond-to(xs, max) {
+  .contact,
+  .copyright {
+    font-size: 1.4rem;
+  }
+  .container {
+    margin: 0;
+  }
+}
