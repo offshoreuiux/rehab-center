@@ -13,7 +13,6 @@ const list = [
   'Ongoing aftercare and support',
 ];
 function Feature() {
-  console.log(window.innerWidth);
   return (
     <div className={style.container}>
       <h6 className={style.titleMobile}>

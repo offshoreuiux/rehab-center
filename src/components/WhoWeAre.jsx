@@ -15,6 +15,9 @@ function WhoWeAre() {
         combines medical expertise, emotional support, and tailored programs to
         meet each patient’s unique needs.
       </p>
+      <div className={style.verticalLine}>
+        <hr color="#888" />
+      </div>
       <div className={style.imageCardContainer}>
         <ImageCard
           img={inpatient}

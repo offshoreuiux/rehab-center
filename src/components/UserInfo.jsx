@@ -23,7 +23,6 @@ function UserInfo() {
   };
   const handleinput = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setUserData((prev) => ({ ...prev, [name]: value }));
   };
   return (

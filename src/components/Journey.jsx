@@ -12,7 +12,7 @@ function Journey() {
         with a compassionate team member and take the first step toward lasting
         recovery.
       </p>
-      <CustomButton title="continue" />
+      <CustomButton title="CONTACT US" />
     </div>
   );
 }

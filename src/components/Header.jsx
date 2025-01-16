@@ -20,7 +20,7 @@ function Header() {
         <img src={call24} alt="call24" className={style.call24} />
         <img src={call} alt="call" className={style.call} />
         <div className={style.textContainer}>
-          <p className={style.call}>CALL US NOW</p>
+          <p className={style.callText}>CALL US NOW</p>
           <p className={style.contact}>(012)234-5678</p>
         </div>
         <div className={style.btn}>

@@ -48,7 +48,7 @@
   gap: 14px;
 }
 
-.call {
+.callText {
   color: $primary-color;
   font-family: Inter;
   font-size: 1.4rem;
@@ -73,6 +73,7 @@
 }
 .btn {
   width: 16.4rem;
+  margin-left: 22px;
 }
 @include respond-to(xs, max) {
   .container {
@@ -94,5 +95,6 @@
   }
   .btn {
     width: 11.4rem;
+    margin-left: 0px;
   }
 }

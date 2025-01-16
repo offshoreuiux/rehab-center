@@ -27,6 +27,7 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .primary {
@@ -52,6 +53,7 @@
   font-weight: 400;
   line-height: 31px; /* 172.222% */
   margin-bottom: 4rem;
+  margin-top: 16px;
 }
 
 .textContainer {
@@ -144,9 +146,12 @@
   }
   .text {
     font-size: 1.2rem;
+    margin-bottom: 0px;
   }
   .primary {
     font-size: 2.6rem;
+    margin-top: 12px;
+    margin-bottom: 16px;
   }
   .textContainer {
     width: 100%;
@@ -160,6 +165,7 @@
     font-size: 1.4rem;
     margin-bottom: 2.4rem;
     line-height: 2.5rem;
+    margin-top: 0px;
   }
   .heroImg {
     display: none;
