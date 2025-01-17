@@ -1,6 +1,6 @@
 /** @format */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Feature from './components/Feature';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -13,14 +13,15 @@ import SubscribeModal from './components/ui/SubscribeModal';
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const handleOpenModal = () => setModalOpen(true);
   const handleCloseModal = () => setModalOpen(false);
   const handleConfirm = () => {
     setModalOpen(false);
   };
-  setTimeout(() => {
-    setModalOpen(true);
-  }, 10000);
+  useEffect(() => {
+    setTimeout(() => {
+      setModalOpen(true);
+    }, 10000);
+  }, []);
   return (
     <>
       <Header />
