@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8rem;
+  padding: 7.6rem 8rem;
   background-color: #0d264df2;
   gap: 8.8rem;
 }
@@ -33,7 +33,7 @@
 .primary {
   color: #fff;
   font-family: Inter;
-  font-size: 6.2rem;
+  font-size: 4.4rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -52,8 +52,116 @@
   font-style: normal;
   font-weight: 400;
   line-height: 31px; /* 172.222% */
-  margin-bottom: 4rem;
-  margin-top: 16px;
+  margin-bottom: 1.6rem;
+  margin-top: 24px;
+  max-width: 56rem;
+}
+
+.features {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px; /* 172.222% */
+}
+
+.featureContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 560px;
+  row-gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.featureBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.featureText {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 193.75% */
+}
+
+.logoContainer {
+  height: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.logoMobileContainer {
+  display: none;
+}
+
+.logoBox {
+  border-radius: 5.007px;
+  background: #fff;
+  box-shadow: -2.504px -1.252px 10.014px 0px rgba(0, 0, 0, 0.08),
+    12.518px 8.763px 25.036px 0px rgba(0, 0, 0, 0.08);
+  max-width: 19.7rem;
+  overflow: hidden;
+}
+.upperBorder {
+  background-color: #4dbc9d;
+  height: 2.504px;
+  align-self: stretch;
+}
+
+.googleLogoBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+}
+
+.googleLogo {
+  width: 40px;
+  height: 40px;
+}
+
+.googleRating {
+  color: var(--Dark-grey, #6a6a6a);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10.014px; /* 100.145% */
+}
+
+.ratingBox {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.rating {
+  color: #fea500;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 15.022px; /* 107.298% */
+}
+
+.starLogo {
+  width: 19px;
+  height: 19px;
+}
+
+.reviews {
+  font-size: 5.022px;
+  line-height: normal;
 }
 
 .textContainer {
@@ -137,8 +245,8 @@
   .innerContainer {
     flex-direction: column;
     padding: 1.9rem;
-    height: 434px;
-    gap: 4.8rem;
+    height: 533px;
+    gap: 3.5rem;
   }
   .imgContainer {
     max-width: 35.6rem;
@@ -147,26 +255,105 @@
   .text {
     font-size: 1.2rem;
     margin-bottom: 0px;
+    width: 100%;
   }
   .primary {
     font-size: 2.6rem;
     margin-top: 12px;
     margin-bottom: 16px;
+    text-align: left;
   }
   .textContainer {
     width: 100%;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     padding-top: 1rem;
   }
   .secondaryText {
     font-size: 1.4rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1rem;
     line-height: 2.5rem;
     margin-top: 0px;
   }
+
+  .featureContainer {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  .features {
+    width: 100%;
+  }
+  .logoContainer {
+    display: none;
+  }
+
+  .logoMobileContainer {
+    height: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  .googleLogoBox {
+    gap: 4px;
+    padding: 6px 9px;
+    width: 124px;
+  }
+
+  .upperBorder {
+    height: 1.57px;
+  }
+
+  .googleRating {
+    font-size: 6.278px;
+    line-height: 6.287px; /* 100.145% */
+  }
+
+  .ratingBox {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  .rating {
+    font-size: 8.789px;
+    line-height: 9.431px; /* 107.298% */
+  }
+
+  .starLogo {
+    width: 11px;
+    height: 11px;
+  }
+
+  .reviews {
+    color: var(--Grey, #868686);
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .googleLogo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .legit {
+    width: 40.284px;
+    height: 43.946px;
+  }
+
+  .quality {
+    width: 46.143px;
+    height: 43.946px;
+  }
+
   .heroImg {
     display: none;
   }

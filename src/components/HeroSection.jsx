@@ -7,26 +7,68 @@ import CustomButton from './ui/CustomButton';
 import customer1 from '../assets/customer1.png';
 import customer2 from '../assets/customer2.png';
 import customer3 from '../assets/customer3.png';
+import listIcon from '../assets/icons/listStyleIcon.svg';
+import googleLogo from '../assets/icons/googleLogo.svg';
+import legitLogo from '../assets/icons/legitScriptLogo.svg';
+import ratingStart from '../assets/icons/ratingStar.svg';
+import qualityLogo from '../assets/icons/nationalQualityLogo.svg';
+import { useState } from 'react';
 
 function HeroSection() {
+  const [ratings, setRatings] = useState(5);
   return (
     <div className={style.container}>
       <div className={style.innerContainer}>
         <div className={style.textContainer}>
           <p className={style.text}>Find Your Inner Resilience</p>
           <span className={style.primary}>
-            Reclaim Your Life,
-            <span className={style.primaryColored}> Rediscover</span> Your
-            Strength
+            A 5 Star Drug & Alcohol Detox and
+            <span className={style.primaryColored}>
+              {' '}
+              Rehab Services Center
+            </span>{' '}
+            in [Location]
           </span>
           <p className={style.secondaryText}>
-            Reclaim Your Life, Rediscover Your Strength" is a powerful call to
-            action, encouraging individuals to take control of their journey,
-            overcome challenges, and reconnect with their inner power and
-            resilience. It emphasizes empowerment, personal growth, and the
-            pursuit of a fulfilled life.
+            Expert drug and alcohol detox and rehab services in [Location],
+            offering personalized care to support your recovery.
           </p>
+          <h6 className={style.features}>Here’s What You Can Expect:</h6>
+          <div className={style.featureContainer}>
+            <span className={style.featureBox}>
+              <img src={listIcon} alt="list-icon" />
+              <p className={style.featureText}>Drug & Alcohol Detox</p>
+            </span>
+            <span className={style.featureBox}>
+              <img src={listIcon} alt="list-icon" />
+              <p className={style.featureText}>Rehabilitation Services</p>
+            </span>
+            <span className={style.featureBox}>
+              <img src={listIcon} alt="list-icon" />
+              <p className={style.featureText}>Inpatient & Outpatient Care</p>
+            </span>
+          </div>
           <CustomButton />
+          <div className={style.logoContainer}>
+            <div className={style.logoBox}>
+              <div className={style.upperBorder}></div>
+              <div className={style.googleLogoBox}>
+                <img src={googleLogo} alt="google-logo" />
+                <span>
+                  <p className={style.googleRating}>Google Rating</p>
+                  <div className={style.ratingBox}>
+                    <p className={style.rating}>{ratings.toFixed(1)}</p>
+                    {Array.from({ length: ratings }).map((__dirname, ind) => (
+                      <img src={ratingStart} alt="star" key={ind} />
+                    ))}
+                  </div>
+                  <p className={style.reviews}>See all our reviews</p>
+                </span>
+              </div>
+            </div>
+            <img src={legitLogo} alt="legit-logo" />
+            <img src={qualityLogo} alt="quality-logo" />
+          </div>
         </div>
         <div className={style.imgContainer}>
           <img src={hero} alt="hero-img" className={style.heroImg} />
@@ -54,7 +96,6 @@ function HeroSection() {
                 className={`${style.img} ${style.img3}`}
               />
               <button className={style.plusBtn}>
-                {' '}
                 <svg
                   width="10"
                   height="10"
@@ -70,6 +111,35 @@ function HeroSection() {
               </button>
             </div>
           </div>
+        </div>
+        <div className={style.logoMobileContainer}>
+          <div className={style.logoBox}>
+            <div className={style.upperBorder}></div>
+            <div className={style.googleLogoBox}>
+              <img
+                src={googleLogo}
+                alt="google-logo"
+                className={style.googleLogo}
+              />
+              <span>
+                <p className={style.googleRating}>Google Rating</p>
+                <div className={style.ratingBox}>
+                  <p className={style.rating}>{ratings.toFixed(1)}</p>
+                  {Array.from({ length: ratings }).map((__dirname, ind) => (
+                    <img
+                      src={ratingStart}
+                      alt="star"
+                      key={ind}
+                      className={style.starLogo}
+                    />
+                  ))}
+                </div>
+                <p className={style.reviews}>See all our reviews</p>
+              </span>
+            </div>
+          </div>
+          <img src={legitLogo} alt="legit-logo" className={style.legit} />
+          <img src={qualityLogo} alt="quality-logo" className={style.quality} />
         </div>
       </div>
     </div>
