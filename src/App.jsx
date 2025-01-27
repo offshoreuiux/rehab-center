@@ -22,6 +22,20 @@ function App() {
       setModalOpen(true);
     }, 10000);
   }, []);
+
+  // Prevent scrolling when the modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup to reset the style when the component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isModalOpen]);
   return (
     <>
       <Header />
