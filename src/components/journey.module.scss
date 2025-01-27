@@ -52,3 +52,11 @@
     line-height: 2.5rem;
   }
 }
+
+/* Fallback for browsers that don't support WebP */
+@supports not (--css: variables) {
+  .container {
+    background: url(../assets/journey-bg.png) #0b1f3d 0px 0px / 100% 138%
+      no-repeat;
+  }
+}

@@ -1,16 +1,17 @@
 /** @format */
 
 import style from './heroSection.module.scss';
-import hero from '../assets/hero.png';
+import hero from '../assets/hero.webp';
 import heroMobile from '../assets/heroMobile.png';
 import CustomButton from './ui/CustomButton';
-import customer1 from '../assets/customer1.png';
-import customer2 from '../assets/customer2.png';
-import customer3 from '../assets/customer3.png';
+import customer1 from '../assets/customer1.webp';
+import customer2 from '../assets/customer2.webp';
+import customer3 from '../assets/customer3.webp';
 import listIcon from '../assets/icons/listStyleIcon.svg';
 import googleLogo from '../assets/icons/googleLogo.svg';
 import legitLogo from '../assets/icons/legitScriptLogo.svg';
-import ratingStart from '../assets/icons/ratingStar.svg';
+import ratingStar from '../assets/icons/ratingStar.svg';
+import ratingStarEmpty from '../assets/icons/ratingStarEmpty.svg';
 import qualityLogo from '../assets/icons/nationalQualityLogo.svg';
 import { useState } from 'react';
 
@@ -59,8 +60,14 @@ function HeroSection() {
                   <div className={style.ratingBox}>
                     <p className={style.rating}>{ratings.toFixed(1)}</p>
                     {Array.from({ length: ratings }).map((__dirname, ind) => (
-                      <img src={ratingStart} alt="star" key={ind} />
+                      <img src={ratingStar} alt="star" key={ind} />
                     ))}
+                    {/* TO SHOW EMPTY STAR ON MOBILE */}
+                    {Array.from({ length: 5 - ratings }).map(
+                      (__dirname, ind) => (
+                        <img src={ratingStarEmpty} alt="star" key={ind} />
+                      )
+                    )}
                   </div>
                   <p className={style.reviews}>See all our reviews</p>
                 </span>
@@ -71,7 +78,7 @@ function HeroSection() {
           </div>
         </div>
         <div className={style.imgContainer}>
-          <img src={hero} alt="hero-img" className={style.heroImg} />
+          <img src={hero} alt="hero-image" className={style.heroImg} />
           <img
             src={heroMobile}
             alt="heroMobile-img"
@@ -127,7 +134,16 @@ function HeroSection() {
                   <p className={style.rating}>{ratings.toFixed(1)}</p>
                   {Array.from({ length: ratings }).map((__dirname, ind) => (
                     <img
-                      src={ratingStart}
+                      src={ratingStar}
+                      alt="star"
+                      key={ind}
+                      className={style.starLogo}
+                    />
+                  ))}
+                  {/* TO SHOW EMPTY STAR ON MOBILE */}
+                  {Array.from({ length: 5 - ratings }).map((__dirname, ind) => (
+                    <img
+                      src={ratingStarEmpty}
                       alt="star"
                       key={ind}
                       className={style.starLogo}

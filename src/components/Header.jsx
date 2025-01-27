@@ -17,7 +17,12 @@ function Header() {
         </div>
       </div>
       <div className={style.right}>
-        <img src={call24} alt="call24" className={style.call24} />
+        <img
+          src={call24}
+          alt="call24"
+          className={style.call24}
+         
+        />
         <img src={call} alt="call" className={style.call} />
         <div className={style.textContainer}>
           <p className={style.callText}>CALL US NOW</p>

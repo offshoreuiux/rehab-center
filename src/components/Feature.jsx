@@ -1,7 +1,7 @@
 /** @format */
 
 import style from './feature.module.scss';
-import path from '../assets/path.png';
+import path from '../assets/path.webp';
 import tick from '../assets/icons/tick.svg';
 import CustomButton from './ui/CustomButton';
 

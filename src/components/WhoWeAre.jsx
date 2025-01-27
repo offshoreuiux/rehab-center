@@ -2,8 +2,8 @@
 
 import ImageCard from './ui/ImageCard';
 import style from './whoWeAre.module.scss';
-import inpatient from '../assets/inpatient.png';
-import support from '../assets/support.png';
+import inpatient from '../assets/inpatient.webp';
+import support from '../assets/support.webp';
 
 function WhoWeAre() {
   return (
