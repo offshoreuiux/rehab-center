@@ -27,10 +27,10 @@ function HeroSection() {
               {' '}
               Rehab Services Center
             </span>{' '}
-            in [Location]
+            in Massachusetts
           </span>
           <p className={style.secondaryText}>
-            Expert drug and alcohol detox and rehab services in [Location],
+            Expert drug and alcohol detox and rehab services in Massachusetts,
             offering personalized care to support your recovery.
           </p>
           <h6 className={style.features}>Here’s What You Can Expect:</h6>
