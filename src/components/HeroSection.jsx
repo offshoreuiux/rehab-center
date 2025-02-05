@@ -9,7 +9,7 @@ import customer2 from '../assets/customer2.webp';
 import customer3 from '../assets/customer3.webp';
 import listIcon from '../assets/icons/listStyleIcon.svg';
 import googleLogo from '../assets/icons/googleLogo.svg';
-import legitLogo from '../assets/icons/legitScriptLogo.svg';
+import legitLogo from '../assets/icons/legitscriptLogo.svg';
 import ratingStar from '../assets/icons/ratingStar.svg';
 import ratingStarEmpty from '../assets/icons/ratingStarEmpty.svg';
 import qualityLogo from '../assets/icons/nationalQualityLogo.svg';
